@@ -32,13 +32,14 @@
   <div>
     <?php
     // sostituice la parola inserita dall'utente con gli asterischi
-    echo str_replace(htmlspecialchars($_GET["name"]), "***", $testo);
-    ?>
+    echo str_replace(htmlspecialchars($_GET["badword"]), "***", $testo);
+    echo strlen($testo)
+      ?>
   </div>
 
   <div>
     <?php
-    // sostituice la parola inserita dall'utente con gli asterischi
+    // ricontare i caratteri 
     echo strlen($testo);
     ?>
   </div>
