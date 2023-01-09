@@ -14,7 +14,7 @@
     <!-- tag per scrivere php-->
     <?php
     // creo la variabile con il testo 
-    $testo = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam, ut doloribus esse enim voluptates, ipsam nihil veniam, accusamus laboriosam laudantium molestias error. Nam et similique, magnam reiciendis ad modi.";
+    $testo = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam, ut doloribus esse enim voluptates, ipsam nihil veniam, accusamus laboriosam laudantium molestias error. Nam et similique, magnam reiciendis ad modi sit.";
 
     // stampo il testo 
     echo $testo;
@@ -26,11 +26,12 @@
     <?php
     // stampo la lunghezza in caratteri della variabile testo
     echo strlen($testo);
-    ?>
+
+    // sostituice la parola inserita dall'utente con gli asterischi
+    echo str_replace(htmlspecialchars($_GET["name"]), "***", $testo)
+      ?>
+
   </div>
-
-
-
 
 </body>
 
