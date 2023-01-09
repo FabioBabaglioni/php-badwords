@@ -26,11 +26,21 @@
     <?php
     // stampo la lunghezza in caratteri della variabile testo
     echo strlen($testo);
+    ?>
+  </div>
 
+  <div>
+    <?php
     // sostituice la parola inserita dall'utente con gli asterischi
-    echo str_replace(htmlspecialchars($_GET["name"]), "***", $testo)
-      ?>
+    echo str_replace(htmlspecialchars($_GET["name"]), "***", $testo);
+    ?>
+  </div>
 
+  <div>
+    <?php
+    // sostituice la parola inserita dall'utente con gli asterischi
+    echo strlen($testo);
+    ?>
   </div>
 
 </body>
